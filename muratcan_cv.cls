@@ -32,6 +32,7 @@
 \newcommand*{\setthemecolor}[1]{\def\@themecolor{#1}}
 \newcommand*{\setlinkedinaccount}[1]{\def\@linkedinaccount{#1}}
 \newcommand*{\setgithubaccount}[1]{\def\@githubaccount{#1}}
+\definecolor{light-gray}{gray}{0.6} 
 
 %Setup for coverletter
 
@@ -57,7 +58,7 @@
 \hfill
 \begin{minipage}[t]{0.45\linewidth}
     % \center \name \\[0.05cm] 
-    \center \contact % address \ mobile \\ mail
+    \raggedleft \contact % address \ mobile \\ mail
 \end{minipage}
 }
 
@@ -81,7 +82,7 @@
 \newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
 
 \newcommand{\name}{%
-    {\huge \color{gray}\@firstname \ \color{black}\textsc{\@lastname}}
+    {\huge \color{light-gray}\@firstname \ \color{black}\textsc{\@lastname}}
 }
 
 \newcommand{\contact}{%
@@ -141,12 +142,12 @@ Position: & \@claimedposition \\
 
 \newcommand{\datedexperience}[2]{%
 %   \begin{small} \mbox { \hspace{1em} \scshape \textbf{#1} } \end{small} \hfill \datetext{#2}\\[0.01cm] %
-  \begin{minipage}{0.96\linewidth} \begin{small} \hspace{1em} \scshape \textbf{#1} \end{small} \hfill \datetext{#2} \end{minipage} \\[0.1cm]
+  \begin{minipage}{0.96\linewidth} \begin{small} \hspace{1em} \scshape \textbf{#1} \end{small} \hfill \datetext{#2} \vspace{\dp0} \end{minipage} \\[0.05cm]
 }
 
 \newcommand{\explanation}[1]{%
 	% \mbox { \scshape \hspace{1em} \footnotesize #1}\\[0.2cm] %
-	\indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \\[-0.2cm]
+	\indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \vspace{\dp0} \end{minipage} \\[0.1cm]
 }
 
 \newcommand{\explanationdetail}[1]{%
@@ -197,7 +198,7 @@ Position: & \@claimedposition \\
 
 \newcommand\createfootnote{%
   \renewcommand{\footnotesize}{\fontsize{6pt}{11pt}\selectfont}
-    \renewcommand\footnoterule{\rule{0.3\linewidth}{0.5pt}}
-    \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/muratcankaracabey/latex_cv}{source code}}}
+    \renewcommand\footnoterule{\raggedleft\rule{0.13\linewidth}{0.5pt}}
+    \let\thefootnote\relax\footnote{\raggedleft\today}}
 
 
