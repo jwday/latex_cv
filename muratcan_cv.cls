@@ -50,13 +50,14 @@
 
 % can makebox also be used?
 \newcommand\headerview{
-\begin{minipage}{0.25\linewidth}
-    \profpic{0.22}{images/profilpicture}
+\begin{minipage}[t]{0.5\linewidth}
+	% \profpic{0.22}{images/profilpicture}
+	\name
 \end{minipage}% 
 \hfill
-\begin{minipage}{0.45\linewidth}
-    \center \name \\[0.05cm] 
-    \contact % address \ mobile \\ mail
+\begin{minipage}[t]{0.45\linewidth}
+    % \center \name \\[0.05cm] 
+    \center \contact % address \ mobile \\ mail
 \end{minipage}
 }
 
@@ -80,12 +81,12 @@
 \newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
 
 \newcommand{\name}{%
-    {\large \@firstname \ \textsc{\@lastname}}
+    {\huge \color{gray}\@firstname \ \color{black}\textsc{\@lastname}}
 }
 
 \newcommand{\contact}{%
-        {\small \@address  \cps \@mobile \\ \@mail%
-        \\%
+		{\small \@address   \\ 
+		\@mobile \cps \@mail \\
         \linkedinview \cps \githubview \\ 
         } % 
 }
@@ -126,12 +127,12 @@ Position: & \@claimedposition \\
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {\ruleafter}                           % Can be used to insert code before the heading
 
-\titlespacing*{\section}{-1pt}{0pt}{0pt}
+\titlespacing*{\section}{-1pt}{-3pt}{0pt}
 
 % Textview commands
 
 \newcommand{\experience}[2]{%
-  \mbox { \hspace{1em} \scshape \textbf{#1} }%
+  \mbox { \hspace{1em} \scshape \textbf{#1} }
 }
 
 \newcommand{\datetext}[1]{%
@@ -139,15 +140,17 @@ Position: & \@claimedposition \\
 }
 
 \newcommand{\datedexperience}[2]{%
-  \begin{small} \mbox { \hspace{1em} \scshape \textbf{#1} } \end{small} \hfill \datetext{#2}\\[0.01cm] %
+%   \begin{small} \mbox { \hspace{1em} \scshape \textbf{#1} } \end{small} \hfill \datetext{#2}\\[0.01cm] %
+  \begin{minipage}{0.96\linewidth} \begin{small} \hspace{1em} \scshape \textbf{#1} \end{small} \hfill \datetext{#2} \end{minipage} \\[0.1cm]
 }
 
 \newcommand{\explanation}[1]{%
-    \mbox { \scshape \hspace{1.2em} \footnotesize #1}\\[0.05cm]
+	% \mbox { \scshape \hspace{1em} \footnotesize #1}\\[0.2cm] %
+	\indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \\[-0.2cm]
 }
 
 \newcommand{\explanationdetail}[1]{%
-    \indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \\[0.1cm]
+    \indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \\[0.2cm]
 }
 
 \newcommand{\itemwithtext}[1]{%
@@ -177,7 +180,7 @@ Position: & \@claimedposition \\
 \explanationdetail{
   \begin{tabular}{rl}
     \makeatletter
-    \@for\thisitem:=#1\do{\thisitem\\[0.1cm]}
+    \@for\thisitem:=#1\do{\thisitem\\[0.01cm]}
     \makeatother
     \end{tabular}
 }
@@ -193,7 +196,7 @@ Position: & \@claimedposition \\
 }
 
 \newcommand\createfootnote{%
-  \renewcommand{\footnotesize}{\fontsize{7pt}{11pt}\selectfont}
+  \renewcommand{\footnotesize}{\fontsize{6pt}{11pt}\selectfont}
     \renewcommand\footnoterule{\rule{0.3\linewidth}{0.5pt}}
     \let\thefootnote\relax\footnote{\today\ / \href{https://github.com/muratcankaracabey/latex_cv}{source code}}}
 
