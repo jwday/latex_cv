@@ -13,7 +13,7 @@
 \RequirePackage{titlesec}
 \RequirePackage{tikz}
 \RequirePackage{fontspec}
-\RequirePackage[left=0.75in,top=0.3in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\RequirePackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 \RequirePackage{hyperref}
 \RequirePackage{fontawesome}
 \RequirePackage{mfirstuc}
@@ -21,6 +21,7 @@
 \RequirePackage{lipsum}
 \RequirePackage{array}
 \pagestyle{empty}
+\usepackage[none]{hyphenat}
 
 %Setup
 
@@ -82,12 +83,12 @@
 \newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
 
 \newcommand{\name}{%
-    {\huge \color{light-gray}\@firstname \ \color{black}\textsc{\@lastname}}
+    {\Huge \color{light-gray}\@firstname \ \color{black}\textsc{\@lastname}}
 }
 
 \newcommand{\contact}{%
-		{\small \@address   \\ 
-		\@mobile \cps \@mail \\
+		{\small \@address   \\[0.3em] 
+		\@mobile \cps \@mail \\[0.3em]
         \linkedinview \cps \githubview \\ 
         } % 
 }
@@ -142,7 +143,7 @@ Position: & \@claimedposition \\
 
 \newcommand{\datedexperience}[2]{%
 %   \begin{small} \mbox { \hspace{1em} \scshape \textbf{#1} } \end{small} \hfill \datetext{#2}\\[0.01cm] %
-  \begin{minipage}{0.96\linewidth} \begin{small} \hspace{1em} \scshape \textbf{#1} \end{small} \hfill \datetext{#2} \vspace{\dp0} \end{minipage} \\[0.05cm]
+  \begin{minipage}{1\linewidth} \begin{small} \hspace{1em} \scshape \textbf{#1} \end{small} \hfill \datetext{#2} \vspace{\dp0} \end{minipage} \\[0.05cm]
 }
 
 \newcommand{\explanation}[1]{%
