@@ -1,19 +1,19 @@
 # Fdb version 3
-["bibtex CV"] 1602806952 "CV.aux" "CV.bbl" "CV" 1603387374
+["bibtex CV"] 1607394194 "CV.aux" "CV.bbl" "CV" 1607560667
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "CV.aux" 1603387374 1337 2d5f9ea2117405c813427533836e49cb "xelatex"
+  "CV.aux" 1607560666 1324 2286f6faf692059caa7ffea2541b89a9 "xelatex"
   "publications.bib" 1602228193 428 37b92c08dc3de9804f0c7df4c2352b17 ""
   (generated)
-  "CV.bbl"
   "CV.blg"
-["xdvipdfmx"] 1603387374 "/home/josh/latex_cv/CV.xdv" "/home/josh/latex_cv/CV.pdf" "/home/josh/latex_cv/CV" 1603387374
-  "/home/josh/latex_cv/CV.xdv" 1603387374 46692 84d8a65cdac756496cd3747ee0669163 "xelatex"
+  "CV.bbl"
+["xdvipdfmx"] 1607560666 "/home/josh/latex_cv/CV.xdv" "/home/josh/latex_cv/CV.pdf" "/home/josh/latex_cv/CV" 1607560667
+  "/home/josh/latex_cv/CV.xdv" 1607560666 97156 5374ee7c17e97f1ea9f00193b28f9dcc "xelatex"
   (generated)
   "/home/josh/latex_cv/CV.pdf"
-["xelatex"] 1603387373 "/home/josh/latex_cv/CV.tex" "/home/josh/latex_cv/CV.xdv" "CV" 1603387374
+["xelatex"] 1607560665 "/home/josh/latex_cv/CV.tex" "/home/josh/latex_cv/CV.xdv" "CV" 1607560667
   "/etc/texmf/web2c/texmf.cnf" 1601416460 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/josh/latex_cv/CV.aux" 1603387374 1337 2d5f9ea2117405c813427533836e49cb ""
-  "/home/josh/latex_cv/CV.tex" 1603387367 9020 f47ca4131edc9634e3103a62ffa51c41 ""
+  "/home/josh/latex_cv/CV.aux" 1607560666 1324 2286f6faf692059caa7ffea2541b89a9 ""
+  "/home/josh/latex_cv/CV.tex" 1607560663 15988 f7e3c8ea97b2ae891e9cdad0ebe9f9ff ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -168,16 +168,16 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1602202995 3335524 41133e3c84649dbead4e041049fcd984 ""
-  "CV.aux" 1603387374 1337 2d5f9ea2117405c813427533836e49cb "xelatex"
-  "CV.bbl" 1602806952 301 c0d145c36ce501c143fef70cf94aafac "bibtex CV"
-  "CV.out" 1603387374 256 e340ab8beb05028a699f2fe4f0d2a76a "xelatex"
-  "CV.tex" 1603387367 9020 f47ca4131edc9634e3103a62ffa51c41 ""
-  "muratcan_cv.cls" 1602806481 6027 b7a4bdaaaaf17250aa643372e70a3538 ""
+  "CV.aux" 1607560666 1324 2286f6faf692059caa7ffea2541b89a9 "xelatex"
+  "CV.bbl" 1607394194 301 c0d145c36ce501c143fef70cf94aafac "bibtex CV"
+  "CV.out" 1607560666 240 8b5525a329d11281ffcc67173cd29e58 "xelatex"
+  "CV.tex" 1607560663 15988 f7e3c8ea97b2ae891e9cdad0ebe9f9ff ""
+  "muratcan_cv.cls" 1605225750 6045 2e951671bb044aeed284472f57414d87 ""
   "publications.bib" 1602228193 428 37b92c08dc3de9804f0c7df4c2352b17 ""
   (generated)
-  "CV.out"
   "/home/josh/latex_cv/CV.xdv"
   "/home/josh/latex_cv/CV.log"
-  "CV.log"
-  "CV.xdv"
   "CV.aux"
+  "CV.xdv"
+  "CV.log"
+  "CV.out"

@@ -79,8 +79,8 @@
 %contactsubviews 
     
     
-\newcommand{\githubview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
-\newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
+\newcommand{\linkedinview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
+\newcommand{\githubview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
 
 \newcommand{\name}{%
     {\Huge \color{light-gray}\@firstname \ \color{black}\textsc{\@lastname}}
@@ -89,7 +89,7 @@
 \newcommand{\contact}{%
 		{\small \@address   \\[0.3em] 
 		\@mobile \cps \@mail \\[0.3em]
-        \linkedinview \cps \githubview \\ 
+        \githubview \cps \linkedinview \\ 
         } % 
 }
 
@@ -143,16 +143,16 @@ Position: & \@claimedposition \\
 
 \newcommand{\datedexperience}[2]{%
 %   \begin{small} \mbox { \hspace{1em} \scshape \textbf{#1} } \end{small} \hfill \datetext{#2}\\[0.01cm] %
-  \begin{minipage}{1\linewidth} \begin{small} \hspace{1em} \scshape \textbf{#1} \end{small} \hfill \datetext{#2} \vspace{\dp0} \end{minipage} \\[0.05cm]
+  \begin{minipage}[t]{1\linewidth} \begin{small} \hspace{1em} \scshape \textbf{#1} \end{small} \hfill \datetext{#2} \vspace{\dp0} \end{minipage}
 }
 
 \newcommand{\explanation}[1]{%
 	% \mbox { \scshape \hspace{1em} \footnotesize #1}\\[0.2cm] %
-	\indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \vspace{\dp0} \end{minipage} \\[0.1cm]
+	\indent \begin{minipage}[t]{0.96\linewidth} \footnotesize \textit{\textbf{#1}} \vspace{\dp0} \end{minipage} \\[-0.05cm]
 }
 
 \newcommand{\explanationdetail}[1]{%
-    \indent \begin{minipage}{0.96\linewidth} \footnotesize #1 \end{minipage} \\[0.2cm]
+    \indent \begin{minipage}[t]{0.96\linewidth} \footnotesize #1 \end{minipage} \\[0.3cm]
 }
 
 \newcommand{\itemwithtext}[1]{%
