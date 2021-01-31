@@ -3,10 +3,10 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: CV.aux
 The style file: unsrt.bst
 Database file #1: publications.bib
-Warning--empty journal in day2020two
+Warning--empty journal in day2020
 You've used 1 entry,
             1791 wiz_defined-function locations,
-            452 strings with 3731 characters,
+            452 strings with 3728 characters,
 and the built_in function-call counts, 280 in all, are:
 = -- 26
 > -- 8

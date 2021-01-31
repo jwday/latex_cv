@@ -11,7 +11,7 @@
 \setmobile{(916) 765-9396}
 \setmail{jwday@ucdavis.edu}
 \setposition{Work Student} %ignored for now
-\setlinkedinaccount{https://www.linkedin.com/in/josh-day-49b10a58/} %you can play with color of the template (red is also nice..)
+\setlinkedinaccount{https://www.linkedin.com/in/joshwday} %you can play with color of the template (red is also nice..)
 \setgithubaccount{https://github.com/jwday} %you can play with color of the template (red is also nice..)
 \setthemecolor{Orange} %you can play with color of the template (red is also nice..)
 \urlstyle{same}
@@ -20,7 +20,7 @@
 %            bibliographyish
 %----------------------------------------------------------------------------------
 \begin{filecontents}{publications.bib}
-	@article{day2020two,
+	@article{day2020,
 		author={Day, Josh W and Robinson, Stephen K},
 		title={{Two-Fault} {Tolerant} {Cold} {Gas} {Propulsion} {System} for {Spacecraft-Inspection} {CubeSat}},
 		booktitle={AIAA Scitech 2020 Forum},
@@ -62,26 +62,27 @@
 \section{Publications}
 	\mbox{
 		\hspace{1em}
-		\begin{minipage}{.85\linewidth}
+		\begin{minipage}{.95\linewidth}
 			\footnotesize
 			% \scshape
 			\nobibliography{publications}
-			\bibentry{day2020two}
+			\bibentry{day2020}
 		\end{minipage}
 	}\\
 
 
 % Experience
 \section{Experience}
-	\datedexperience{Human/Robotics/Vehicle Integration \& Performance Lab}{Jun 2016 -- Oct 2020}
+	\datedexperience{Human/Robotics/Vehicle Integration \& Performance Lab}{Jun 2016 -- Sep 2020}
 	\explanation{Graduate Student Researcher}
 	\explanationdetail{%
 		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
 			\setlength\itemsep{-0.05em}
-			\item Constructed small satellite propulsion system testbed using air bearings and 3D printed components to simulate microgravity conditions, enabling highly repeatable motion measurements at low cost.
-			\item Designed and constructed a cold gas propulsion system using 3D printed pressure vessels and commercial off-the-shelf parts to achieve full 3 degrees-of-freedom control of an air bearing test platform.
+			\item Constructed small satellite propulsion system and air bearing testbed to simulate microgravity conditions and enable highly repeatable motion measurements at low cost, and open-sourcing the design for other organizations.
+			% \item Designed and constructed a cold gas propulsion system using 3D printed pressure vessels and commercial off-the-shelf parts to achieve full 3 degrees-of-freedom control of an air bearing test platform.
+			\item Designed Printed Circuit Boards (PCB) and soldered components to form the electronics package of the propulsion system controller and used multimeter testing to verify electrical connections and diagnose connection problems.
+			\item Developed full stack human-machine interface using JavaScript + Arduino (C++) in Linux environment for real-time wireless control of propulsion system and feedback from sensors.
 			\item Implemented Python + OpenCV-based computer vision tracking system to measure air bearing platform motion and utilized Kalman filtering to extract acceleration data for accurate vision-based thrust measurement.
-			\item Developed full stack human-machine interface using JavaScript + Arduino  (C++) in Linux environment for real-time wireless control of propulsion system and feedback from sensors.
 		\end{itemize}
 	}
 	%
@@ -116,6 +117,7 @@
 		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
 			\setlength\itemsep{-0.05em}
 			\item Assisted with performance testing of flight-like motors and actuators in extreme temperatures and helped to design and lead special testing to uncover cause of premature gearbox degradation.
+			\item Drew schematics for and fabricated data and power wiring harnesses for Mars 2020 motor and actuator testing
 			\item Supported R\&D on the proposed Mars Sample Return mission with trade studies and conceptual design development for a robust latching system and alignment/release mechanism.
 			\item Developed Python and MATLAB-based data analysis tools to visualize motor performance test data and generate test summaries to be delivered directly to supervising engineers.
 		\end{itemize}
@@ -136,10 +138,14 @@
 	% \createskills{\skillone, \skilltwo, \skillthree, \skillfour}
 	\explanationdetail{\footnotesize \textsc{%
 		\begin{tabular}{ r l l }
-			\textbf{CAD/CAM Software}				& SolidWorks \cpshalf NX 11 \cpshalf Slic3r \cpshalf BobCAM \cpshalf ESPRIT							\\
-			\textbf{Manufacturing Experience}		& CNC Lathing / Milling / Routing \cpshalf 3D Printing (FDM) \cpshalf Printed Circuit Boards		\\
-			\textbf{Programming Languages}			& Python \cpshalf C++ (Arduino) \cpshalf MATLAB \cpshalf											\\
-			\textbf{Development Tools}				& Git \cpshalf Linux / WSL \cpshalf VS Code												
+			% \textbf{Manufacturing Experience}		& Printed Circuit Board Design \cpshalf Wiring Harness Fabrication \cpshalf Soldering \cpshalf 3D Printing \cpshalf CNC		\\
+			% \textbf{Programming Languages}			& Python \cpshalf C++ (Arduino) \cpshalf MATLAB \cpshalf JavaScript \cpshalf HTML \cpshalf CSS 		\\
+			% \textbf{Development Tools}				& Git \cpshalf Linux / WSL \cpshalf VS Code															\\
+			% \textbf{CAD/CAM Software}				& Autodesk EAGLE \cpshalf Microsoft Visio \cpshalf SolidWorks \cpshalf NX 11 \cpshalf Slic3r
+			\textbf{CAD/CAM Software}				& SolidWorks \cpshalf NX 11 \cpshalf Slic3r \cpshalf Autodesk EAGLE \cpshalf Microsoft Visio  	\\
+			\textbf{Manufacturing Experience}		& CNC Machining \cpshalf 3D Printing \cpshalf PCB Design \cpshalf Wiring Harness Fabrication \cpshalf Hand Tools \\
+			\textbf{Programming Languages}			& Python \cpshalf C++ (Arduino) \cpshalf MATLAB \cpshalf JavaScript \cpshalf HTML \cpshalf CSS 		\\
+			\textbf{Development Tools}				& Git \cpshalf Linux / WSL \cpshalf VS Code	\cpshalf Drupal														\\
 		\end{tabular}
 		}
 	}
@@ -170,9 +176,21 @@
     % %
 	% \createbullets{\listofextras}
 	
-\pagebreak
+% \pagebreak
 
 \section{Key Projects}
+	% \mbox{
+	% 	\hspace{1em}
+	% 	\begin{minipage}{.96\linewidth}
+	% 		\explanationdetail{%
+	% 			The following is a selection of relevent engineering projects and a brief description for each.
+	% 			A link to the corresponding GitHub repository is available if viewing this document on a computer and wish to view the details, source code, and other materials for each project.
+	% 		}
+	% 	\end{minipage}
+	% }
+	% %
+	% \linebreak
+	% %
 	\datedexperience{\href{https://github.com/jwday/ABTestbed}{\color{black}{Air Bearing-based Propulsion System Testbed \faGithubSquare}}}{}
 	\explanationdetail{%
 		An air bearing-based platform and table was developed to provide a free-floating low friction environment for testing a prototype cold gas propulsion system.
@@ -187,13 +205,27 @@
 		% The air bearing table was constructed by placing a 0.125''-thick pane of glass atop a 3' x 5' optics bench and shimmed with 0.1-mm Kapton tape to minimize surface deviations.
 	}
 	%
+	\linebreak
+	%
+	\datedexperience{\href{https://github.com/jwday/3D-printed-plenum}{\color{black}{3D Printed Propellant Pressure Vessel \faGithubSquare}}}{}
+	\explanationdetail{%
+		Propellant storage volumes ('plenums') were constructed to store CO2 propellant at 100 psig using an off-the-shelf benchtop 3D printer.
+		A process was developed to finish and seal the 3D printed components with two-part epoxy and securely bond a threaded fitting to allow the plenums to be mated directly to the propulsion control valves.
+		Aided by CAD-based stress analysis, several iterations were produced with varying connectors, geometry, and print methods in order to produce a final version which could be reliably printed in a short amount of time.
+		Each plenum underwent proof testing to double its expected pressure (200 psig) using water to minimize explosive energy in event of failure.
+	}
+	%
+	\linebreak
+	%
 	\datedexperience{\href{https://github.com/jwday/remoteProp}{\color{black}{Arduino and Raspberry Pi-based Wireless Propulsion Controller \faGithubSquare}}}{}
 	\explanationdetail{%
-		A propulsion system consisting of twelve solenoid valves and two pressure transducers was controlled using an Arduino-like NodeMCU microcontroller and additional components laid out on a custom-designed printed circuit board (PCB).
+		A propulsion system consisting of twelve solenoid valves and two pressure transducers was controlled using an Arduino-like NodeMCU microcontroller and additional electrical components laid out on a custom-designed printed circuit board (PCB) to form an electronics package.
 		The NodeMCU was chosen as a low-cost platform which could wirelessly communicate with a message broker using a simple MQTT framework.
 		The Raspberry Pi simultaneously hosted the MQTT message broker and an HTTP server to allow clients to send commands to the propulsion system via a web interface.
 		The same framework was used to support data collection during thrust testing by wirelessly relaying strain gauge and pressure measurements to the broker which then stored the data in a database for post-processing.
 	}
+	%
+	\linebreak
 	%
 	\datedexperience{\href{https://github.com/jwday/ComputerVision}{\color{black}{Computer Vision System and Kalman Filter Data Post-processor \faGithubSquare}}}{}
 	\explanationdetail{%
@@ -203,13 +235,8 @@
 		These tools allow a user to detect accelerations due to thrust and friction, and quantitatively compare the effects of different combinations of thruster failures.
 	}
 	%
-	\datedexperience{\href{https://github.com/jwday/3D-printed-plenum}{\color{black}{3D Printed Propellant Pressure Vessel \faGithubSquare}}}{}
-	\explanationdetail{%
-		Propellant storage volumes ('plenums') were constructed to store CO2 propellant at 100 psig using an off-the-shelf benchtop 3D printer.
-		A process was developed to finish and seal the 3D printed components with two-part epoxy and securely bond a threaded fitting to allow the plenums to be mated directly to the propulsion control valves.
-		Aided by CAD-based stress analysis, several iterations were produced with varying connectors, geometry, and print methods in order to produce a final version which could be reliably printed in a short amount of time.
-		Each plenum underwent proof testing to double its expected pressure (200 psig) using water to minimize explosive energy in event of failure.
-	}
+	\linebreak
+	%
 	\datedexperience{\href{https://github.com/jwday/nozzleDesign}{\color{black}{Gas Dynamics Simulation for Single Plenum Discharge \faGithubSquare}}}{}
 	\explanationdetail{%
 		A Python-based gas dynamics simulation was developed to predict the performance characteristics of the plenum-based propulsion system by modeling the change in propellant thermodynamic properties during a discharge process.
@@ -218,6 +245,9 @@
 		Simulation results were experimentally validated by measuring pressure and thrust during a discharge, which were found to be in good agreement after the completion of an initial start-up phase whereby the mass flow rate and thrust increased to a maximum before decaying.
 		% The modeled process was found to be in the same family as that of a rocket nozzle during its shut-off phase, with the exception of a brief period in the beginning where mass flow rate and thrust must first rise to a maximum before decaying.
 	}
+	%
+	\linebreak
+	%
 	\datedexperience{\href{https://github.com/jwday/rotating-torus-sympy}{\color{black}{Dynamics Modeling of a Rotating Torus with Time-Varying Mass Distribution \faGithubSquare}}}{}
 	\explanationdetail{%
 		A Multibody Dynamics class project which used Python to implement Kane's Method of dynamic analysis to model a rotating torus in free space as system mass is shifted to offset the center of gravity.
