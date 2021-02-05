@@ -52,56 +52,63 @@
 		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
 			\item Thesis: \emph{Development of a Two-Fault Tolerant Cold Gas Propulsion System and Air Bearing\newline Testbed for Application to a Spacecraft-Inspection CubeSat}, \href{https://github.com/jwday/Thesis-Pub/raw/master/Josh\%20Day\%2C\%20MS\%20Thesis\%20vFinal.pdf}{available online.}
 		\end{itemize}
-    }
+		\vspace{-1.3em}
+	}
     \datedexperience{B.S. Mechanical Engineering}{University of California, Davis -- 2013}
     \datedexperience{B.S. Aerospace Science \& Engineering}{}
     % \explanation{University of California, Davis}\\[-0.8cm]
 
 
-% Publications
-\section{Publications}
-	\mbox{
-		\hspace{1em}
-		\begin{minipage}{.95\linewidth}
-			\footnotesize
-			% \scshape
-			\nobibliography{publications}
-			\bibentry{day2020}
-		\end{minipage}
-	}\\
-
 
 % Experience
 \section{Experience}
 	\datedexperience{Human/Robotics/Vehicle Integration \& Performance Lab}{Jun 2016 -- Sep 2020}
-	\explanation{Graduate Student Researcher}
+	\explanationwithlocation{Graduate Student Researcher}{Davis, CA}
 	\explanationdetail{%
 		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
 			\setlength\itemsep{-0.05em}
-			\item Constructed small satellite propulsion system and air bearing testbed to simulate microgravity conditions and enable highly repeatable motion measurements at low cost, and open-sourcing the design for other organizations.
+			\item Defined requirements for and designed, simulated, and constructed a small satellite propulsion system prototype, and constructed air bearing testbed to simulate microgravity conditions for 3 Degree-of-Freedom propulsion system testing.
 			% \item Designed and constructed a cold gas propulsion system using 3D printed pressure vessels and commercial off-the-shelf parts to achieve full 3 degrees-of-freedom control of an air bearing test platform.
-			\item Designed Printed Circuit Boards (PCB) and soldered components to form the electronics package of the propulsion system controller and used multimeter testing to verify electrical connections and diagnose connection problems.
+			\item Developed Python-based propulsion simulation model to estimate time-varying performance of thrusters utilizing non-constant supply pressure, experimentally validated the simulation and presented results at AIAA SciTech 2020.
+			\item Implemented Python + OpenCV-based computer vision tracking system to measure air bearing platform motion, and utilized Kalman filtering to estimate acceleration to achieve low-cost vision-based thrust measurement.
 			\item Developed full stack human-machine interface using JavaScript + Arduino (C++) in Linux environment for real-time wireless control of propulsion system and feedback from sensors.
-			\item Implemented Python + OpenCV-based computer vision tracking system to measure air bearing platform motion and utilized Kalman filtering to extract acceleration data for accurate vision-based thrust measurement.
+			% \item Designed and constructed propulsion system control circuitry and integrated components together using a custom-designed printed circuit board.
 		\end{itemize}
+		\vspace{-1.3em}
+	}
+	\explanationwithlocation{Conference Publication}{AIAA SciTech 2020, Orlando, FL}
+	\explanationdetail{%
+		\begin{itemize}[label=\textcolor{orange}{$\circ$}, leftmargin=*]
+			\setlength\itemsep{-0.05em}
+			\vspace{-0.9em}
+			\item \nobibliography{publications} \bibentry{day2020}
+		\end{itemize}
+		% \mbox{%
+		% 	\hspace{1em}
+		% 	\begin{minipage}{.9\linewidth}
+		% 		\footnotesize
+		% 		\nobibliography{publications}
+		% 		\bibentry{day2020}
+		% 	\end{minipage}
+		% }
 	}
 	%
     \datedexperience{UC Davis Department of Mechanical and Aerospace Engineering}{Sep 2015 -- Jun 2019}
-    \explanation{Teaching Assistant (Multiple Courses)}
+    \explanationwithlocation{Teaching Assistant (Multiple Courses)}{Davis, CA}
 	\explanationdetail{%
 		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
 			\setlength\itemsep{-0.05em}
 			% \item As lead TA for Engineering Design \& Communications, assisted with lesson plan development and supervised three bi-weekly lab sessions consisting of 6 teams of 4 students, each with their own individual project needs.
-			\item \emph{Engineering Design \& Communications} -- As lead TA, assisted lesson plan development, gave weekly lectures introducing students to sensors and microcontrollers, and provided critical feedback on public speaking and technical communication.
 			% \item Applied experience with programming, sensors, and actuators to introduce students to data collection with microcontrollers and guide team projects to address problems identified on the UC Davis Student Farm.
 			% \item Provided effective feedback to students engaged in public speaking and presentations, citing notable improvement in technical communication and public speaking skills from beginning to end of quarter.
+			\item \emph{Engineering Design \& Communications} -- As lead TA, assisted in lesson plan development, gave weekly lectures introducing sensors and microcontrollers, and provided critical feedback on public speaking and technical communication.
 			\item \emph{Measurement Systems} -- Supervised weekly lab sessions introducing students to electro-mechanical sensors such as op-amps and strain gauges to measure bending stress and accelerometers to identify vibrational modes.
-			\item \emph{Manufacturing Processes} -- Instructed students on safe operation of manual fabrication equipment and proper use of geometric dimensioning and tolerancing, leading each student in the construction of their own personalized gyroscope.
+			\item \emph{Manufacturing Processes} -- Instructed students on safe operation of manual lathing and milling, utilizing geometric design and tolerancing (GD\&T), and developing process plans to fabricate steel and aluminum gyroscopes.
 		\end{itemize}
 	}
     %
     \datedexperience{NASA Jet Propulsion Laboratory}{Jun 2018 -- Aug 2018}
-	\explanation{Mechanical Engineering Intern}
+	\explanationwithlocation{Mechanical Engineering Intern}{Pasadena, CA}
 	\explanationdetail{%
 		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
 			\setlength\itemsep{-0.05em}
@@ -112,17 +119,43 @@
 	}		
     %
     \datedexperience{NASA Jet Propulsion Laboratory}{Jan 2017 -- Aug 2017}
-	\explanation{Mechanical Engineering Co-op}
+	\explanationwithlocation{Mechanical Engineering Co-op}{Pasadena, CA}
 	\explanationdetail{%
 		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
 			\setlength\itemsep{-0.05em}
-			\item Assisted with performance testing of flight-like motors and actuators in extreme temperatures and helped to design and lead special testing to uncover cause of premature gearbox degradation.
-			\item Drew schematics for and fabricated data and power wiring harnesses for Mars 2020 motor and actuator testing
+			\item Assisted with performance testing and evaluation of flight-like motors and actuators in Mars-like environments, and assisted with design and execution of special testing to uncover cause of premature gearbox degradation.
+			\item Drew schematics for and fabricated custom power and data wiring harnesses to connect motion controllers and sensors for Mars 2020 motor and actuator testing.
 			\item Supported R\&D on the proposed Mars Sample Return mission with trade studies and conceptual design development for a robust latching system and alignment/release mechanism.
 			\item Developed Python and MATLAB-based data analysis tools to visualize motor performance test data and generate test summaries to be delivered directly to supervising engineers.
 		\end{itemize}
 	}
+	%
+    % \datedexperience{SP Engineering Services}{May 2014 -- Aug 2015}
+	% \explanationwithlocation{Design \& Fabrication Engineer}{Vacaville, CA}
+	% \explanationdetail{%
+	% 	\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
+	% 		\setlength\itemsep{-0.05em}
+	% 		% \item Collaborated with a team of engineers to designed and fabricate FDA-compliant storage and organizational solutions for large-scale pharmaceutical manufacturing utilizing CAD/CAM software and CNC machinery.
+	% 		\item Operated CNC router and laser cutter on daily basis and established standard operating procedures to fabricate FDA-compliant products for large-scale pharmaceutical manufacturing and biotech customers.
+	% 		\item Performed R\&D for proprietary fabrication process employing photography techniques and image manipulation to quickly generate CAM tool paths and enabling rapid turnaround of customized products.
+	% 		\item Interacted directly with customers to identify needs, define requirements, and implement design changes based on feedback.
+	% 	\end{itemize}
+	% }
+	%
 
+
+% Publications
+% \section{Publications}
+% 	\mbox{
+% 		\hspace{1em}
+% 		\begin{minipage}{.95\linewidth}
+% 			\footnotesize
+% 			% \scshape
+% 			\nobibliography{publications}
+% 			\bibentry{day2020}
+% 		\end{minipage}
+% 	}\\
+	%
 
 % Skills
 \section{Technical Skills}
@@ -144,7 +177,7 @@
 			% \textbf{CAD/CAM Software}				& Autodesk EAGLE \cpshalf Microsoft Visio \cpshalf SolidWorks \cpshalf NX 11 \cpshalf Slic3r
 			\textbf{CAD/CAM Software}				& SolidWorks \cpshalf NX 11 \cpshalf Slic3r \cpshalf Autodesk EAGLE \cpshalf Microsoft Visio  	\\
 			\textbf{Manufacturing Experience}		& CNC Machining \cpshalf 3D Printing \cpshalf PCB Design \cpshalf Wiring Harness Fabrication \cpshalf Hand Tools \\
-			\textbf{Programming Languages}			& Python \cpshalf C++ (Arduino) \cpshalf MATLAB \cpshalf JavaScript \cpshalf HTML \cpshalf CSS 		\\
+			\textbf{Programming Languages}			& Python \cpshalf C++ (Arduino) \cpshalf MATLAB \cpshalf JavaScript \cpshalf HTML \cpshalf CSS 			\\
 			\textbf{Development Tools}				& Git \cpshalf Linux / WSL \cpshalf VS Code	\cpshalf Drupal														\\
 		\end{tabular}
 		}

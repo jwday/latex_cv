@@ -148,11 +148,16 @@ Position: & \@claimedposition \\
 
 \newcommand{\explanation}[1]{%
 	% \mbox { \scshape \hspace{1em} \footnotesize #1}\\[0.2cm] %
-	\indent \begin{minipage}[t]{0.96\linewidth} \footnotesize \textit{\textbf{#1}} \vspace{\dp0} \end{minipage} \\[-0.05cm]
+	\indent \begin{minipage}[t]{0.96\linewidth} \footnotesize \textit{\textbf{#1}} \vspace{\dp0} \end{minipage} \\[-0.0cm]
+}
+
+\newcommand{\explanationwithlocation}[2]{%
+	% \mbox { \scshape \hspace{1em} \footnotesize #1}\\[0.2cm] %
+	\indent \begin{minipage}[t]{0.96\linewidth} \footnotesize \textit{\textbf{#1}} \vspace{\dp0} \hfill \datetext{#2} \end{minipage} \\[-0.05cm]
 }
 
 \newcommand{\explanationdetail}[1]{%
-    \indent \begin{minipage}[t]{0.96\linewidth} \footnotesize #1 \end{minipage} \\[0.3cm]
+    \indent \begin{minipage}[t]{0.95\linewidth} \footnotesize #1 \end{minipage} \\[0.3cm]
 }
 
 \newcommand{\itemwithtext}[1]{%

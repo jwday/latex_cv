@@ -261,12 +261,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /home/josh/latex_cv/CV.bbl
 INPUT /home/josh/latex_cv/CV.bbl
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 OUTPUT /home/josh/latex_cv/CV.xdv
 INPUT /home/josh/latex_cv/CV.aux
 INPUT /home/josh/latex_cv/CV.out
