@@ -6,8 +6,8 @@
 \usepackage{hyperref}
 \bibliographystyle{unsrt}
 
-\setname{Josh}{Day}
-\setaddress{9979 Granite Point Court -- Granite Bay, CA}
+\setname{}{Josh \bf{Day}}
+\setaddress{2191 El Sereno Ave. -- Altadena, CA}
 \setmobile{(916) 765-9396}
 \setmail{jwday@ucdavis.edu}
 \setposition{Work Student} %ignored for now
@@ -62,20 +62,32 @@
 
 % Experience
 \section{Experience}
+	\datedexperience{Columbus Technologies \& Services}{May 2021 -- Present}
+	\explanationwithlocation{Mechanical Engineer III (TTAPS, NASA Jet Propulsion Laboratory)}{Pasadena, CA}
+	\explanationdetail{%
+		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
+			\setlength\itemsep{-0.05em}
+			\item Designed and constructed prototype securement mechanism for Mars Sample Return (MSR) orbiting sample (OS) canister and oversaw test campaign to characterize performance which led to immediate design refinements.
+			\item Designed and performed static and modal analyses using NX NASTRAN on OS mass model which will undergo repeated high velocity impacts, and made responsible for interface between mass model and impactor hardware.
+			\item Developed, coordinated, and managed test campaign to characterize stress-strain response of crushable materials and programmed Python-based data processing scripts as part of OS design trade study.
+			% \item Documented and routinely presented design reviews, test readiness reports, test results senior engineers
+		\end{itemize}
+	}
+	%		
 	\datedexperience{Human/Robotics/Vehicle Integration \& Performance Lab}{Jun 2016 -- Sep 2020}
 	\explanationwithlocation{Graduate Student Researcher}{Davis, CA}
 	\explanationdetail{%
 		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
 			\setlength\itemsep{-0.05em}
-			\item Defined requirements for and designed, simulated, and constructed a small satellite propulsion system prototype, and constructed an air bearing testbed to simulate microgravity conditions for 3 degree-of-freedom testing.
-			% \item Designed and constructed a cold gas propulsion system using 3D printed pressure vessels and commercial off-the-shelf parts to achieve full 3 degrees-of-freedom control of an air bearing test platform.
-			\item Developed Python-based script to predict time-varying performance of thrusters with non-constant supply pressure, experimentally validated the predictions, and presented the results at AIAA SciTech 2020.
+			\item Defined requirements for and designed, simulated, and constructed a small satellite propulsion system prototype and custom-built a 3 degree-of-freedom air bearing platform to simulate microgravity for propulsion system testing.
+			\item Architectured and integrated propulsion system control hardware and developed full stack human-machine interface for real-time wireless control and sensor feedback using Arduino and Raspberry Pi programmed in C++ and JavaScript.
 			\item Implemented Python + OpenCV-based computer vision tracking system to measure air bearing platform motion and utilized Kalman filtering to estimate acceleration to achieve low-cost vision-based thrust measurement.
-			% \item Developed full stack human-machine interface using JavaScript + Arduino (C++) in Linux environment for real-time wireless control of propulsion system and feedback from sensors.
-			% \item Designed and constructed propulsion system control circuitry and integrated components together using a custom-designed printed circuit board.
+			% \item Developed Python-based gas dynamics simulation to predict time-varying performance of thrusters with non-constant supply pressure, experimentally validated the predictions, and presented the results at AIAA SciTech 2020.
+			% \item Designed and constructed a cold gas propulsion system using 3D printed pressure vessels and commercial off-the-shelf parts to achieve full 3 degrees-of-freedom control of an air bearing test platform.
 		\end{itemize}
 		\vspace{-1.3em}
 	}
+	%
 	\explanationwithlocation{Conference Publication}{AIAA SciTech 2020, Orlando, FL}
 	\explanationdetail{%
 		\begin{itemize}[label=\textcolor{orange}{$\circ$}, leftmargin=*]
@@ -84,12 +96,13 @@
 			\item \nobibliography{publications} \bibentry{day2020}
 		\end{itemize}
 	}
+	%
 	\explanationwithlocation{Teaching Assistant}{Sep 2015 -- Mar 2019 (10 qtrs.)}
 	\explanationdetail{%
 		\begin{itemize}[label=\textcolor{orange}{$\circ$}, leftmargin=*]
 			\setlength\itemsep{-0.05em}
 			\vspace{-0.9em}
-			\item \emph{Manufacturing Processes}, \emph{Measurement Systems}, and \emph{Engineering Design \& Communications} (Lead)
+			\item \emph{Engineering Design \& Communications} (Lead) \qquad \textcolor{red}{$\circ$} \emph{Measurement Systems} \qquad \textcolor{red}{$\circ$} \emph{Manufacturing Processes}
 		\end{itemize}
 	}
 	% \explanationwithlocation{Patent Pending}{April 2021}
@@ -115,29 +128,43 @@
 	% 	\end{itemize}
 	% }
     %
-    \datedexperience{NASA Jet Propulsion Laboratory}{Jun 2018 -- Aug 2018}
-	\explanationwithlocation{Mechanical Engineering Intern}{Pasadena, CA}
+    \datedexperience{NASA Jet Propulsion Laboratory}{Jan 2017 -- Aug 2017, Jun 2018 -- Aug 2018}
+	\explanationwithlocation{Mechanical Engineer Co-op (2017), Intern (2018)}{Pasadena, CA}
 	\explanationdetail{%
 		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
 			\setlength\itemsep{-0.05em}
-			\item Designed components to emulate mass properties of flight hardware and provided sensor recommendations for launch vibration testing of components for the Mars 2020 rover Sample Caching Subsystem.
-			\item Assembled and calibrated a customized bench-top dynamometer to be used for motor/actuator performance testing, documenting assembly process and providing recommendations for improvement to supervising engineer.
-			\item Developed procedure and coordinated assembly of epoxy-bonded aluminum honeycomb shock dampers, personally handling and successfully delivering the hardware which was flown on the Mars 2020 Perseverance rover.
+			\item Assisted with performance testing and evaluation of flight-like motors and actuators in Mars-like environments and assisted with design and execution of special testing to uncover cause of premature gearbox degradation.
+			\item Developed Python and MATLAB-based data analysis tools to visualize motor performance test data and generate test summaries to be delivered directly to supervising engineers.
+			
+			\item Designed mass models of flight components and provided sensor recommendations for launch vibration testing of components for the Mars 2020 rover Sample Caching Subsystem.
+			% \item Assembled and calibrated bench-top dynamometer setup to be used for motor/actuator performance testing. Documented assembly process and provided recommendations for improvement to supervising engineer.
+			% \item Developed procedure and coordinated assembly of epoxy-bonded aluminum honeycomb shock dampers, personally handling and successfully delivering the hardware which was flown on the Mars 2020 Perseverance rover.
 		\end{itemize}
 	}		
     %
-    \datedexperience{NASA Jet Propulsion Laboratory}{Jan 2017 -- Aug 2017}
-	\explanationwithlocation{Mechanical Engineering Co-op}{Pasadena, CA}
-	\explanationdetail{%
-		\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
-			\setlength\itemsep{-0.05em}
-			\item Assisted with performance testing and evaluation of flight-like motors and actuators in Mars-like environments, and assisted with design and execution of special testing to uncover cause of premature gearbox degradation.
-			% \item Drew schematics for and fabricated custom power and data wiring harnesses to connect motion controllers and sensors for Mars 2020 motor and actuator testing.
-			\item Developed Python and MATLAB-based data analysis tools to visualize motor performance test data and generate test summaries to be delivered directly to supervising engineers.
-			\item Supported R\&D on the proposed Mars Sample Return mission with trade studies and conceptual design development for a robust latching system and alignment/release mechanism.
-		\end{itemize}
-	}
-	%
+    % \datedexperience{NASA Jet Propulsion Laboratory}{Jun 2018 -- Aug 2018}
+	% \explanationwithlocation{Mechanical Engineering Intern}{Pasadena, CA}
+	% \explanationdetail{%
+	% 	\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
+	% 		\setlength\itemsep{-0.05em}
+	% 		\item Designed components to emulate mass properties of flight hardware and provided sensor recommendations for launch vibration testing of components for the Mars 2020 rover Sample Caching Subsystem.
+	% 		\item Assembled and calibrated a customized bench-top dynamometer to be used for motor/actuator performance testing, documenting assembly process and providing recommendations for improvement to supervising engineer.
+	% 		\item Developed procedure and coordinated assembly of epoxy-bonded aluminum honeycomb shock dampers, personally handling and successfully delivering the hardware which was flown on the Mars 2020 Perseverance rover.
+	% 	\end{itemize}
+	% }		
+    % %
+    % \datedexperience{NASA Jet Propulsion Laboratory}{Jan 2017 -- Aug 2017}
+	% \explanationwithlocation{Mechanical Engineering Co-op}{Pasadena, CA}
+	% \explanationdetail{%
+	% 	\begin{itemize}[label=\textcolor{red}{$\circ$}, leftmargin=*]
+	% 		\setlength\itemsep{-0.05em}
+	% 		\item Assisted with performance testing and evaluation of flight-like motors and actuators in Mars-like environments, and assisted with design and execution of special testing to uncover cause of premature gearbox degradation.
+	% 		% \item Drew schematics for and fabricated custom power and data wiring harnesses to connect motion controllers and sensors for Mars 2020 motor and actuator testing.
+	% 		\item Developed Python and MATLAB-based data analysis tools to visualize motor performance test data and generate test summaries to be delivered directly to supervising engineers.
+	% 		\item Supported R\&D on the proposed Mars Sample Return mission with trade studies and conceptual design development for a robust latching system and alignment/release mechanism.
+	% 	\end{itemize}
+	% }
+	% %
     \datedexperience{SP Engineering Services}{May 2014 -- Aug 2015}
 	\explanationwithlocation{Design \& Fabrication Engineer}{Vacaville, CA}
 	\explanationdetail{%
@@ -148,8 +175,8 @@
 			% \item Performed R\&D for proprietary fabrication process employing photography techniques and image manipulation to quickly generate CAM tool paths and enabling rapid turnaround of customized products.
 			% \item Interacted directly with customers to identify needs, define requirements, and implement design changes based on feedback.
 			\item Collaborated with a small team of engineers to design and manufacture FDA-compliant storage, organizational, and process solutions for pharmaceutical manufacturing and biotechnology research organizations.
-			\item Developed novel process to rapidly dimensionalize client hardware by employing photography and image manipulation to quickly generate CAM tool paths, reducing the product turnaround time from days to hours.
-			\item Tasked with product ideation and prototyping to take advantage of available CNC machine time, and fabricated many conceptual bamboo and plastic-based novelty products for the beverage and wine industry.
+			\item Developed novel process to rapidly dimensionalize client hardware by employing photography and image manipulation to quickly generate CAM tool paths, which reduced the product turnaround time from days to hours.
+			\item Lead product ideation and prototyping efforts to take advantage of available CNC machine down-time and fabricated conceptual bamboo and plastic-based products for the beverage and wine industry.
 		\end{itemize}
 	}
 	
@@ -186,10 +213,10 @@
 			% \textbf{Programming Languages}			& Python \cpshalf C++ (Arduino) \cpshalf MATLAB \cpshalf JavaScript \cpshalf HTML \cpshalf CSS 		\\
 			% \textbf{Development Tools}				& Git \cpshalf Linux / WSL \cpshalf VS Code															\\
 			% \textbf{CAD/CAM Software}				& Autodesk EAGLE \cpshalf Microsoft Visio \cpshalf SolidWorks \cpshalf NX 11 \cpshalf Slic3r
-			\textbf{CAD/CAM Software}				& SolidWorks \cpshalf NX 11 \cpshalf Slic3r \cpshalf Autodesk EAGLE \cpshalf Microsoft Visio  	\\
-			\textbf{Manufacturing Experience}		& CNC Machining \cpshalf 3D Printing \cpshalf PCB Design \cpshalf Wiring Harness Fabrication \cpshalf Hand Tools \\
-			\textbf{Programming Languages}			& Python \cpshalf C++ (Arduino) \cpshalf MATLAB \cpshalf JavaScript \cpshalf HTML \cpshalf CSS 			\\
-			\textbf{Development Tools}				& Git \cpshalf Linux / WSL \cpshalf VS Code	\cpshalf Drupal														\\
+			\textbf{CAD/CAM Software}				& Siemens NX \& NX NASTRAN \cpshalf SolidWorks \cpshalf Slic3r \cpshalf Autodesk EAGLE \cpshalf Microsoft Visio  	\\
+			\textbf{Development Tools}				& Siemens TeamCenter \cpshalf Git \cpshalf Linux / WSL \cpshalf VS Code	\cpshalf Drupal														\\
+			\textbf{Programming Languages}			& Python \cpshalf Arduino (C++) \cpshalf MATLAB \cpshalf JavaScript \cpshalf HTML \cpshalf CSS 			\\
+			\textbf{Manufacturing Experience}		& CNC Machining \cpshalf 3D Printing \cpshalf PCB Design \cpshalf Wiring Harness Fabrication \\
 		\end{tabular}
 		}
 	}
@@ -237,8 +264,8 @@
 	% %
 	\datedexperience{\href{https://github.com/jwday/ABTestbed}{\color{black}{Air Bearing Propulsion System Testbed \faGithubSquare}}}{}
 	\explanationdetail{%
-		An air bearing-based platform and table was developed to provide a free-floating low friction environment for testing a prototype cold gas propulsion system.
-		Pneumatic components were acquired off-the-shelf and structural components 3D printed to reduce cost and enable facilitate dissemination of open-sourced part files.
+		Developed an air bearing-based platform and table to provide a free-floating low friction environment for testing a prototype cold gas propulsion system.
+		Pneumatic components were acquired off-the-shelf and structural components 3D printed to reduce cost and facilitate dissemination of open-sourced part files.
 		The air bearing surface was constructed by placing a sheet of regular window pane glass atop an optics table and shimmed as needed to achieve a functionally level surface.
 		% The platform was found to operate marginally at 30 psig with improved functionality up to 50 psig, after which no performance improvements were observed.
 		It was found that debris and inconsistencies in the table surface were the main contributors to degraded performance, and new facilities are being constructed to house the table and mitigate surface debris.
@@ -247,68 +274,69 @@
 		% Three air bearings were mounted to threaded ball studs in a triangular configuration and held in place by a 3D-printed structure.
 		% This same structure supported 2x 9-oz. CO$_{2}$ bottles, a regulator, an air filter, and the propulsion system.
 		% The air bearing table was constructed by placing a 0.125''-thick pane of glass atop a 3' x 5' optics bench and shimmed with 0.1-mm Kapton tape to minimize surface deviations.
-	}
-	%
-	\linebreak
-	%
-	\datedexperience{\href{https://github.com/jwday/3D-printed-plenum}{\color{black}{3D Printed Propellant Pressure Vessel \faGithubSquare}}}{}
-	\explanationdetail{%
-		Propellant storage volumes ('plenums') were constructed to store CO2 propellant at 100 psig using an off-the-shelf benchtop 3D printer.
-		A process was developed to finish and seal the 3D printed components with two-part epoxy and securely bond a threaded fitting to allow the plenums to be mated directly to the propulsion control valves.
-		Aided by CAD-based stress analysis, several iterations were produced with varying connectors, geometry, and print methods in order to produce a final version which could be reliably printed in a short amount of time.
-		Each plenum underwent proof testing to double its expected pressure (200 psig) using water to minimize explosive energy in event of failure.
-	}
-	%
-	\linebreak
-	%
-	\datedexperience{\href{https://github.com/jwday/remoteProp}{\color{black}{Arduino and Raspberry Pi-based Wireless Propulsion Controller \faGithubSquare}}}{}
-	\explanationdetail{%
-		A propulsion system consisting of twelve solenoid valves and two pressure transducers was controlled using an Arduino-like NodeMCU microcontroller and additional electrical components laid out on a custom-designed printed circuit board (PCB) to form an electronics package.
-		The NodeMCU was chosen as a low-cost platform which could wirelessly communicate with a message broker using a simple MQTT framework.
-		The Raspberry Pi simultaneously hosted the MQTT message broker and an HTTP server to allow clients to send commands to the propulsion system via a web interface.
-		The same framework was used to support data collection during thrust testing by wirelessly relaying strain gauge and pressure measurements to the broker which then stored the data in a database for post-processing.
-	}
-	%
-	\linebreak
-	%
-	\datedexperience{\href{https://github.com/jwday/ComputerVision}{\color{black}{Computer Vision System and Kalman Filter Data Post-processor \faGithubSquare}}}{}
-	\explanationdetail{%
-		Position, velocity, and acceleration of a free-floating air bearing platform was measured using a Python-based computer vision algorithm on recorded video.
-		The algorithm detects a fiducial marker placed on the platform and returns a timeseries dataset of relative pose for each frame in the video.
-		The dataset is passed to a Kalman filter which combines the data with a kinematic model to estimate the velocity and acceleration of the platform over time.
-		These tools allow a user to detect accelerations due to thrust and friction, and quantitatively compare the effects of different combinations of thruster failures.
-	}
-	%
-	\linebreak
-	%
-	\datedexperience{\href{https://github.com/jwday/nozzleDesign}{\color{black}{Gas Dynamics Simulation for Single Plenum Discharge \faGithubSquare}}}{}
-	\explanationdetail{%
-		A Python-based gas dynamics simulation was developed to predict the performance characteristics of the plenum-based propulsion system by modeling the change in propellant thermodynamic properties during a discharge process.
-		The change in gas properties with each time step was modeled assuming an isentropic process for an ideal gas, and the corresponding thruster performance was calculated assuming an isentropic process through the nozzle.
-		Further development replaced the isentropic model inside the plenum with interpolated thermodynamic data for real gasses to more accurately predict the temperature change during a discharge.
-		Simulation results were experimentally validated by measuring pressure and thrust during a discharge, which were found to be in good agreement after the completion of an initial start-up phase whereby the mass flow rate and thrust increased to a maximum before decaying.
-		% The modeled process was found to be in the same family as that of a rocket nozzle during its shut-off phase, with the exception of a brief period in the beginning where mass flow rate and thrust must first rise to a maximum before decaying.
-	}
-	%
-	\linebreak
-	%
-	\datedexperience{\href{https://github.com/jwday/rotating-torus-sympy}{\color{black}{Dynamics Modeling of a Rotating Torus with Time-Varying Mass Distribution \faGithubSquare}}}{}
-	\explanationdetail{%
-		A Multibody Dynamics class project which used Python to implement Kane's Method of dynamic analysis to model a rotating torus in free space as system mass is shifted to offset the center of gravity.
-		The motivation for this project was to explore the use of rotation to simulate gravity in a theoretical space station design and explore how internal disturbances could affect the dynamics of the rotation.
-		A simply-rotating body with point masses around the circumference was modeled using the appropriate formulation, but the specific challenge lied in accessing the location of the point masses during the integration routine and changing them mid-step.
-		% As expected, entirely in-plane motion resulted in simple translation of the center of mass while rotation remained in-plane.
-		% More interestingly, some out-of-plane motion of the point masses resulted in a visible ``wobble'', necessitating the introduction of counter-balance masses which would be used to preserve system stability.
-	}
-	%
-	\linebreak
-	%
-	\datedexperience{\href{https://github.com/jwday/LCARS-bot}{\color{black}{LCARS: A Discord Bot Using Discord.js API (Personal Project) \faGithubSquare}}}{}
-	\explanationdetail{%
-		A personal Discord bot created using the Discord.js library as an exercise to become more familiarzed with javaScript, specifically non-sequential function calls.
-		Main features include chat-based Google search, playing YouTube audio, and an emoji react-controlled ``sound board'' to prompt the bot to play sound effects when a chat message is reacted to with pre-specified emoji(s).
-		Specific challenges involved tightly managing event listener creation to prevent different instances from interfering with each other, using javaScript 'cavas' library to create Star Trek-inspired logos, and learning to use 'async' and 'await' functions to handle responsive delays (such as in API calls).
-	}
+		}
+		%
+		\linebreak
+		%
+		\datedexperience{\href{https://github.com/jwday/remoteProp}{\color{black}{Arduino and Raspberry Pi-based Wireless Propulsion Controller \faGithubSquare}}}{}
+		\explanationdetail{%
+		Constructed a wireless electronic control system for the cold gas propulsion system prototype using a NodeMCU microcontroller to drive valves via motor controllers and collect data from pressure transducers.
+		% The circuitry was packed on a custom-designed printed circuit board (PCB).
+		The NodeMCU was chosen as a low-cost platform which could wirelessly communicate with a Raspberry Pi-based message broker using an MQTT framework.
+		NodeJS was used on the Raspberry Pi to simultaneously host the MQTT message broker and an HTTP server to allow users to send commands to the propulsion system via a web interface.
+		The same framework was used to support data collection during static thrust testing by wirelessly relaying strain gauge and pressure measurements to the broker which then stored the data in a database for post-processing.
+		}
+		%
+		\linebreak
+		%
+		\datedexperience{\href{https://github.com/jwday/ComputerVision}{\color{black}{Computer Vision System and Kalman Filter Data Post-processor \faGithubSquare}}}{}
+		\explanationdetail{%
+			Developed a Python-based computer vision algorithm to measure position, velocity, and acceleration of a free-floating air bearing platform from recorded video.
+			The algorithm detected a fiducial marker placed on the platform and returned a timeseries dataset of relative pose for each frame in the video.
+			This dataset was then passed to a Kalman filter which combined the data with a kinematic model to estimate the velocity and acceleration of the platform over time.
+			These tools allowed a user to detect accelerations due to thrust and friction and quantitatively compare the effects of different combinations of thruster failures.
+		}
+		%
+		\linebreak
+		%
+		\datedexperience{\href{https://github.com/jwday/nozzleDesign}{\color{black}{Gas Dynamics Simulation for Single Plenum Discharge \faGithubSquare}}}{}
+		\explanationdetail{%
+			Developed a Python-based gas dynamics simulation to predict the performance characteristics of the plenum-based propulsion system by modeling the change in propellant thermodynamic properties during a discharge process.
+			The change in gas properties with each time step was modeled assuming an isentropic process for an ideal gas, and the corresponding thruster performance was calculated assuming an isentropic process through the nozzle.
+			Further development replaced the isentropic model inside the plenum with interpolated thermodynamic data for real gasses to more accurately predict the temperature change during a discharge.
+			Simulation results were experimentally validated by measuring pressure and thrust during a discharge, which were found to be in good agreement after the completion of an initial start-up phase whereby the mass flow rate and thrust increased to a maximum before decaying.
+			% The modeled process was found to be in the same family as that of a rocket nozzle during its shut-off phase, with the exception of a brief period in the beginning where mass flow rate and thrust must first rise to a maximum before decaying.
+		}
+		%
+		\linebreak
+		%
+		\datedexperience{\href{https://github.com/jwday/3D-printed-plenum}{\color{black}{3D Printed Propellant Pressure Vessel \faGithubSquare}}}{}
+		\explanationdetail{%
+			Constructed propellant storage volumes ('plenums') to store gaseous CO2 at 100 psig using an off-the-shelf benchtop 3D printer for use in on-ground propulsion system testing.
+			A process was developed to finish and seal the 3D printed components with two-part epoxy and securely bond a threaded fitting to allow the plenums to be mated directly to the propulsion control valves.
+			Aided by CAD-based stress analysis, several iterations were produced with varying connectors, geometry, and print methods in order to produce a final version which could be reliably printed in a short amount of time.
+			Each plenum underwent proof testing to double its expected pressure (200 psig) using water to minimize explosive energy in event of failure.
+		}
+		%
+		\linebreak
+		%
+		\datedexperience{\href{https://github.com/jwday/rotating-torus-sympy}{\color{black}{Dynamics Modeling of a Rotating Torus with Time-Varying Mass Distribution \faGithubSquare}}}{}
+		\explanationdetail{%
+			A Multibody Dynamics class project which used Python to implement Kane's Method of dynamic analysis to model a rotating torus in free space as system mass is shifted to offset the center of gravity.
+			The motivation for this project was to explore the use of rotation to simulate gravity in a theoretical space station design and explore how internal disturbances could affect the dynamics of the rotation.
+			A simply-rotating body with point masses around the circumference was modeled using the appropriate formulation, but the specific challenge lied in accessing the location of the point masses during the integration routine and changing them mid-step.
+			% As expected, entirely in-plane motion resulted in simple translation of the center of mass while rotation remained in-plane.
+			% More interestingly, some out-of-plane motion of the point masses resulted in a visible ``wobble'', necessitating the introduction of counter-balance masses which would be used to preserve system stability.
+		}
+		%
+		\linebreak
+		%
+		\datedexperience{\href{https://github.com/jwday/LCARS-bot}{\color{black}{LCARS: A Discord Bot Using Discord.js API (Personal Project) \faGithubSquare}}}{}
+		\explanationdetail{%
+			A personal Discord bot created using the Discord.js library as an exercise to become more familiarzed with javaScript, specifically non-sequential function calls.
+			Main features include chat-based Google search, playing YouTube audio, and an emoji react-controlled ``sound board'' to prompt the bot to play sound effects when a chat message is reacted to with pre-specified emoji(s).
+			Specific challenges involved tightly managing event listener creation to prevent different instances from interfering with each other, using javaScript 'cavas' library to create Star Trek-inspired logos, and learning to use 'async' and 'await' functions to handle responsive delays (such as in API calls).
+		}
 
 
 
