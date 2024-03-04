@@ -375,13 +375,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT ./CV.out
-INPUT ./CV.out
-INPUT ./CV.out
-INPUT ./CV.out
-OUTPUT CV.pdf
-INPUT ./CV.out
 OUTPUT CV.out
+OUTPUT CV.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
@@ -394,7 +389,3 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
 INPUT ./CV.bbl
 INPUT ./CV.bbl
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./CV.aux
-INPUT ./CV.out
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
