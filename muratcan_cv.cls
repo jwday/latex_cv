@@ -143,21 +143,26 @@ Position: & \@claimedposition \\
 
 \newcommand{\datedexperience}[2]{%
 %   \begin{small} \mbox { \hspace{1em} \scshape \textbf{#1} } \end{small} \hfill \datetext{#2}\\[0.01cm] %
-  \begin{minipage}[t]{1\linewidth} \begin{small} \hspace{1em} \scshape \textbf{#1} \end{small} \hfill \datetext{#2} \vspace{\dp0} \end{minipage}
+  \begin{minipage}[t]{1\linewidth} \begin{small} \hspace{0em} \scshape \textbf{#1} \end{small} \hfill \datetext{#2} \vspace{\dp0} \end{minipage} \\[-0.05cm]
 }
 
 \newcommand{\explanation}[1]{%
 	% \mbox { \scshape \hspace{1em} \footnotesize #1}\\[0.2cm] %
-	\indent \begin{minipage}[t]{0.96\linewidth} \footnotesize \textit{\textbf{#1}} \vspace{\dp0} \end{minipage} \\[-0.0cm]
+	\indent \begin{minipage}[t]{0.96\linewidth} \hspace{-1em} \footnotesize \textit{\textbf{#1}} \vspace{\dp0} \end{minipage} \\[-0.0cm]
 }
 
 \newcommand{\explanationwithlocation}[2]{%
 	% \mbox { \scshape \hspace{1em} \footnotesize #1}\\[0.2cm] %
-	\indent \begin{minipage}[t]{0.96\linewidth} \footnotesize \textit{\textbf{#1}} \vspace{\dp0} \hfill \datetext{#2} \end{minipage} \\[-0.05cm]
+	\indent \begin{minipage}[t]{0.96\linewidth} \hspace{-1em} \footnotesize \textit{\textbf{#1}} \vspace{\dp0} \hfill \datetext{#2} \end{minipage} \\[-0.05cm]
+}
+
+\newcommand{\explanationsubsection}[1]{%
+	% \mbox { \scshape \hspace{1em} \footnotesize #1}\\[0.2cm] %
+	\indent \begin{minipage}[t]{0.96\linewidth} \footnotesize \textit{#1} \vspace{\dp0} \end{minipage} \\[-0cm]
 }
 
 \newcommand{\explanationdetail}[1]{%
-    \indent \begin{minipage}[t]{0.95\linewidth} \footnotesize #1 \end{minipage} \\[0.3cm]
+  \indent \begin{minipage}[t]{0.95\linewidth} \footnotesize #1 \end{minipage} \\[0.2cm]
 }
 
 \newcommand{\itemwithtext}[1]{%
